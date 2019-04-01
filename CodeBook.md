@@ -27,14 +27,14 @@ obtained by calculating variables from the time and frequency domain.
 
 The dataset includes the following files required by "run_analysis.R" script:
 
-1. "train/X_train.txt": Training set.
-2. "test/X_test.txt": Test set.
-3. "train/y_train.txt": Training labels.
-4. "test/y_test.txt": Test labels.
-5. "test/subject_test.txt": Each row identifies the subject who performed the train activity.
-5. "train/subject_train.txt": Each row identifies the subject who performed the train activity.
-5. "features.txt": List of all features.
-6. "activity_labels.txt": Links the class labels with their activity name.
+1. "train/X_train.txt" - Train data set.
+2. "test/X_test.txt" - Test data set.
+3. "train/y_train.txt" - Train labels.
+4. "test/y_test.txt" - Test labels.
+5. "test/subject_test.txt" - Identifies the subject that did the train activity.
+5. "train/subject_train.txt" - Identifies the subject that did the train activity.
+5. "features.txt" - All features.
+6. "activity_labels.txt" - Relates the labels with the activity name.
 
 ## "run_analysis.R" description
 
@@ -91,5 +91,4 @@ mean_std_data is the data set created by combining the subject_combined, x_mean_
 11. All "gravity" in column's name replaced by "Gravity"
 
 #### 9. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-The final "tidy_data" is created by sumarazing the mean_std_data taking the means of each variable for each activity and each subject, 
-after groupped by subject and activity.
+The final "tidy_data" is created by sumarazing the mean_std_data with the means of the variable for each activity and each subject, groupped by subject and activity.
